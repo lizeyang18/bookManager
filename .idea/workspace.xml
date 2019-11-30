@@ -2,41 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2d9e6b51-18f1-4e32-876b-cd9bd34ef716" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/WEB-INF/classes/com/bookManager/web/servlet/AddBookServlet.class" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/bookManager_war_exploded/WEB-INF/classes/com/bookManager/dao/BookDao.class" afterPath="$PROJECT_DIR$/out/artifacts/bookManager_war_exploded/WEB-INF/classes/com/bookManager/dao/BookDao.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/bookManager_war_exploded/WEB-INF/classes/com/bookManager/dao/impl/BookDaoImpl.class" afterPath="$PROJECT_DIR$/out/artifacts/bookManager_war_exploded/WEB-INF/classes/com/bookManager/dao/impl/BookDaoImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/bookManager_war_exploded/WEB-INF/classes/com/bookManager/domain/Book.class" afterPath="$PROJECT_DIR$/out/artifacts/bookManager_war_exploded/WEB-INF/classes/com/bookManager/domain/Book.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/bookManager_war_exploded/WEB-INF/classes/com/bookManager/service/BookService.class" afterPath="$PROJECT_DIR$/out/artifacts/bookManager_war_exploded/WEB-INF/classes/com/bookManager/service/BookService.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/bookManager_war_exploded/WEB-INF/classes/com/bookManager/service/impl/BookServiceImpl.class" afterPath="$PROJECT_DIR$/out/artifacts/bookManager_war_exploded/WEB-INF/classes/com/bookManager/service/impl/BookServiceImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/bookManager_war_exploded/WEB-INF/classes/com/bookManager/web/servlet/AddBookServlet.class" afterPath="$PROJECT_DIR$/out/artifacts/bookManager_war_exploded/WEB-INF/classes/com/bookManager/web/servlet/AddBookServlet.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/classes/com/bookManager/dao/BookDao.class" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/com/bookManager/dao/BookDao.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/classes/com/bookManager/dao/impl/BookDaoImpl.class" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/com/bookManager/dao/impl/BookDaoImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/classes/com/bookManager/domain/Book.class" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/com/bookManager/domain/Book.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/classes/com/bookManager/service/BookService.class" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/com/bookManager/service/BookService.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/classes/com/bookManager/service/impl/BookServiceImpl.class" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/com/bookManager/service/impl/BookServiceImpl.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bookManager.iml" afterPath="$PROJECT_DIR$/bookManager.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/bookManager_war_exploded/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/out/artifacts/bookManager_war_exploded/WEB-INF/web.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/bookManager_war_exploded/admin/products/add.jsp" afterPath="$PROJECT_DIR$/out/artifacts/bookManager_war_exploded/admin/products/add.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/bookManager_war_exploded/cart.jsp" afterPath="$PROJECT_DIR$/out/artifacts/bookManager_war_exploded/cart.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/bookManager_war_exploded/index.jsp" afterPath="$PROJECT_DIR$/out/artifacts/bookManager_war_exploded/index.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/bookManager_war_exploded/menu_search.jsp" afterPath="$PROJECT_DIR$/out/artifacts/bookManager_war_exploded/menu_search.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/bookManager_war_exploded/product_info.jsp" afterPath="$PROJECT_DIR$/out/artifacts/bookManager_war_exploded/product_info.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/bookManager/dao/BookDao.java" afterPath="$PROJECT_DIR$/src/com/bookManager/dao/BookDao.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/bookManager/dao/impl/BookDaoImpl.java" afterPath="$PROJECT_DIR$/src/com/bookManager/dao/impl/BookDaoImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/bookManager/domain/Book.java" afterPath="$PROJECT_DIR$/src/com/bookManager/domain/Book.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/bookManager/service/BookService.java" afterPath="$PROJECT_DIR$/src/com/bookManager/service/BookService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/bookManager/service/impl/BookServiceImpl.java" afterPath="$PROJECT_DIR$/src/com/bookManager/service/impl/BookServiceImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/bookManager/web/servlet/AddBookServlet.java" afterPath="$PROJECT_DIR$/src/com/bookManager/web/servlet/AddBookServlet.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/bookManager/web/servlet/UpdateBookServlet.java" afterPath="$PROJECT_DIR$/src/com/bookManager/web/servlet/UpdateBookServlet.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/web/WEB-INF/web.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/admin/products/add.jsp" afterPath="$PROJECT_DIR$/web/admin/products/add.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/admin/products/edit.jsp" afterPath="$PROJECT_DIR$/web/admin/products/edit.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/cart.jsp" afterPath="$PROJECT_DIR$/web/cart.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/index.jsp" afterPath="$PROJECT_DIR$/web/index.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/menu_search.jsp" afterPath="$PROJECT_DIR$/web/menu_search.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/product_info.jsp" afterPath="$PROJECT_DIR$/web/product_info.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/product_list.jsp" afterPath="$PROJECT_DIR$/web/product_list.jsp" />
     </list>
     <ignored path="bookManager.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -283,8 +249,8 @@
       <file leaf-file-name="UpdateBookServlet.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/bookManager/web/servlet/UpdateBookServlet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="2.0316622">
-              <caret line="96" column="0" selection-start-line="96" selection-start-column="0" selection-end-line="96" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.5540897">
+              <caret line="40" column="50" selection-start-line="40" selection-start-column="50" selection-end-line="40" selection-end-column="50" />
               <folding />
             </state>
           </provider>
@@ -1211,15 +1177,15 @@
       <workItem from="1574816538797" duration="6000" />
       <workItem from="1574905285993" duration="124000" />
       <workItem from="1575028864212" duration="1854000" />
-      <workItem from="1575088759766" duration="6419000" />
+      <workItem from="1575088759766" duration="7906000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="39405000" />
+    <option name="totallyTimeSpent" value="40892000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1912" y="-8" width="2576" height="1416" extended-state="6" />
+    <frame x="1912" y="-8" width="2576" height="1416" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1504,7 +1470,7 @@
         <state vertical-scroll-proportion="-16.586206">
           <caret line="37" column="0" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
           <folding>
-            <marker date="1574769830292" expanded="true" signature="1081:1113" placeholder="..." />
+            <marker date="1575096185634" expanded="true" signature="1081:1113" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -1575,8 +1541,8 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
           <folding>
-            <element signature="e#1705#1706#0" expanded="true" />
-            <element signature="e#1758#1759#0" expanded="true" />
+            <element signature="e#1705#1706#0" expanded="false" />
+            <element signature="e#1758#1759#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1586,10 +1552,10 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="63" column="8" selection-start-line="63" selection-start-column="8" selection-end-line="63" selection-end-column="8" />
           <folding>
-            <element signature="e#1440#1441#0" expanded="true" />
-            <element signature="e#1470#1471#0" expanded="true" />
-            <element signature="e#1516#1517#0" expanded="true" />
-            <element signature="e#1554#1555#0" expanded="true" />
+            <element signature="e#1440#1441#0" expanded="false" />
+            <element signature="e#1470#1471#0" expanded="false" />
+            <element signature="e#1516#1517#0" expanded="false" />
+            <element signature="e#1554#1555#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1670,8 +1636,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/bookManager/web/servlet/UpdateBookServlet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="2.0316622">
-          <caret line="96" column="0" selection-start-line="96" selection-start-column="0" selection-end-line="96" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.5540897">
+          <caret line="40" column="50" selection-start-line="40" selection-start-column="50" selection-end-line="40" selection-end-column="50" />
           <folding />
         </state>
       </provider>
