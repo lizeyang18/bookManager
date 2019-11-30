@@ -40,7 +40,7 @@
 		};
 		//3.open
 		xmlhttp.open("GET",
-				"${pageContext.request.contextPath}/findProductName?name="
+				"${pageContext.request.contextPath}/searchBookAjaxServlet?name="
 						+ window.encodeURIComponent(nameValue, "utf-8")
 						+ "&time=" + new Date().getTime());
 		//4.send

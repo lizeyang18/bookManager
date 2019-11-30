@@ -50,10 +50,10 @@ public class BookServiceImpl implements BookService {
     }
 
     @Override
-    public PageBean findBooksPage(int currentPage,int pageSize){
+    public PageBean findBooksPage(int currentPage, int pageSize) {
         int count = bookDao.count();
-        int totalPage = (int)Math.ceil(count*1.0/pageSize);
-        List<Book> books = bookDao.findBooks(currentPage,pageSize);
+        int totalPage = (int) Math.ceil(count * 1.0 / pageSize);
+        List<Book> books = bookDao.findBooks(currentPage, pageSize);
 
         PageBean pb = new PageBean();
         pb.setBooks(books);
@@ -61,5 +61,10 @@ public class BookServiceImpl implements BookService {
         pb.setCurrentPage(currentPage);
         pb.setTotalPage(totalPage);
         return pb;
+    }
+
+    @Override
+    public List<Object> searchBookByName(String name) {
+        return bookDao.searchBookByName(name);
     }
 }

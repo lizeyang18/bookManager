@@ -76,4 +76,11 @@ public interface BookDao {
      * @return
      */
     public List<Book> findBooks(int currentPage, int pageSize);
+
+    /**
+     * ajax搜索框模糊查询
+     * @param name
+     * @return
+     */
+    public List<Object> searchBookByName(String name);
 }

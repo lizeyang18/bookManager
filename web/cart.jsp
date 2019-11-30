@@ -1,11 +1,31 @@
 <%@ page language="java" import="java.util.*" pageEncoding="UTF-8"%>
+<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>>
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html>
 <head>
 <title>电子书城</title>
 <link rel="stylesheet" href="css/main.css" type="text/css" />
 
+<script type="text/javascript">
+	function changeProductNum(num,totalCount,id){
+		num = parseInt(num);
+		totalCount = parseInt(totalCount);
 
+		if(num<1){
+			if(confirm("是否删除该商品？")){
+				num=0;
+			}else{
+				num=1;
+			}
+		}
+
+		if(num>totalCount){
+			alert("累加数量超过库存数量！");
+			num = totalCount;
+		}
+		location.href="${pageContext.request.contextPath}/changeNumServlet?id="+id+"&num="+num;
+	}
+</script>
 
 </head>
 
@@ -44,8 +64,9 @@
 													<td width="10%">小计</td>
 													<td width="10%">取消</td>
 												</tr>
-											</table> 
-											
+											</table>
+											<c:set var="sum" value="0" > </c:set>
+											<c:forEach items="${cart}" var="entry" varStatus="vs">
 												<table width="100%" border="0" cellspacing="0">
 													<tr>
 														<td width="10%">${vs.count}</td>
@@ -65,17 +86,19 @@
 														<td width="10%">${entry.key.pnum}</td>
 														<td width="10%">${entry.key.price*entry.value}</td>
 
-														<td width="10%"><a href="${pageContext.request.contextPath}/changeCart?id=${entry.key.id}&count=0"
+														<td width="10%"><a href="${pageContext.request.contextPath}/changeNumServlet?id=${entry.key.id}&num=0"
 															style="color:#FF0000; font-weight:bold">X</a></td>
 													</tr>
 												</table>
+												<c:set var="sum" value="${sum+entry.value*entry.key.price}" > </c:set>
+											</c:forEach>
 												
 
 
 											<table cellspacing="1" class="carttable">
 												<tr>
 													<td style="text-align:right; padding-right:40px;"><font
-														style="color:#FF6600; font-weight:bold">合计：&nbsp;&nbsp;${total}元</font>
+														style="color:#FF6600; font-weight:bold">合计：&nbsp;&nbsp;${sum}元</font>
 													</td>
 												</tr>
 											</table>

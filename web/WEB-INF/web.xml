@@ -40,6 +40,18 @@
         <servlet-name>FindBookInfoServlet</servlet-name>
         <servlet-class>com.bookManager.web.servlet.FindBookInfoServlet</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>searchBookAjaxServlet</servlet-name>
+        <servlet-class>com.bookManager.web.servlet.searchBookAjaxServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>addCartServlet</servlet-name>
+        <servlet-class>com.bookManager.web.servlet.addCartServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>changeNumServlet</servlet-name>
+        <servlet-class>com.bookManager.web.servlet.changeNumServlet</servlet-class>
+    </servlet>
 
     <servlet-mapping>
         <servlet-name>BookListServlet</servlet-name>
@@ -76,5 +88,17 @@
     <servlet-mapping>
         <servlet-name>FindBookInfoServlet</servlet-name>
         <url-pattern>/FindBookInfoServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>searchBookAjaxServlet</servlet-name>
+        <url-pattern>/searchBookAjaxServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>addCartServlet</servlet-name>
+        <url-pattern>/addCartServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>changeNumServlet</servlet-name>
+        <url-pattern>/changeNumServlet</url-pattern>
     </servlet-mapping>
 </web-app>

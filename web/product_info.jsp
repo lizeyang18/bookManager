@@ -21,7 +21,7 @@
 
 				<td><div style="text-align:right; margin:5px 10px 5px 0px">
 						<a href="#">首页</a>&nbsp;&nbsp;&nbsp;&nbsp;&gt;&nbsp;&nbsp;&nbsp;<a
-							href="#">&nbsp;计算机</a>&nbsp;&nbsp;&nbsp;&nbsp;&gt;&nbsp;&nbsp;&nbsp;&nbsp;java编程思想
+							href="#">&nbsp;计算机</a>&nbsp;&nbsp;&nbsp;&nbsp;&gt;&nbsp;&nbsp;&nbsp;&nbsp;${book.name}
 					</div>
 
 
@@ -38,12 +38,12 @@
 
 											<div class="divbookcover">
 												<p>
-													<img src="#" width="213" height="269" border="0" />
+													<img src="${pageContext.request.contextPath}/upload/${book.img_url}" width="213" height="269" border="0" />
 												</p>
 											</div>
 
 											<div style="text-align:center; margin-top:25px">
-												<a href="#"> <img src="images/buybutton.gif" border="0" />
+												<a href="${pageContext.request.contextPath}/addCartServlet?id=${book.id}"> <img src="images/buybutton.gif" border="0" />
 												</a>
 											</div>
 										</td>

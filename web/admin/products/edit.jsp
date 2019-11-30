@@ -30,7 +30,7 @@
 </script>
 <body onload="setProductCategory('${book.category}')">
 	<form id="userAction_save_do" name="Form1"
-		action="${pageContext.request.contextPath}/UpdateBookServlet" method="post">
+		action="${pageContext.request.contextPath}/UpdateBookServlet" method="post" enctype="multipart/form-data">
 
 		<input text = "hidden" name = "id" value="${book.id}" />
 		<table cellSpacing="1" cellPadding="5" width="100%" align="center"
@@ -78,7 +78,7 @@
 			<tr>
 				<td align="center" bgColor="#f5fafe" class="ta_01">商品图片：</td>
 				<td class="ta_01" bgColor="#ffffff" colSpan="3"><input
-					type="file" name="upload" size="30" value="" /></td>
+					type="file" name="img_url" size="30" value="" /></td>
 			</tr>
 			<TR>
 				<TD class="ta_01" align="center" bgColor="#f5fafe">商品描述：</TD>

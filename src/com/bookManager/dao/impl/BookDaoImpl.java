@@ -7,6 +7,7 @@ import com.bookManager.utils.C3P0Util;
 import org.apache.commons.dbutils.QueryRunner;
 import org.apache.commons.dbutils.handlers.BeanHandler;
 import org.apache.commons.dbutils.handlers.BeanListHandler;
+import org.apache.commons.dbutils.handlers.ColumnListHandler;
 import org.apache.commons.dbutils.handlers.ScalarHandler;
 
 
@@ -43,7 +44,7 @@ public class BookDaoImpl implements BookDao {
     public void addBook(Book book) {
         QueryRunner qr = new QueryRunner(C3P0Util.getDataSource());
         try {
-            qr.update("insert into books values(?,?,?,?,?,?)", book.getId(), book.getName(), book.getPrice(), book.getPnum(), book.getCategory(), book.getDescription());
+            qr.update("insert into books values(?,?,?,?,?,?,?)", book.getId(), book.getName(), book.getPrice(), book.getPnum(), book.getCategory(), book.getDescription(),book.getImg_url());
         } catch (SQLException e) {
             e.printStackTrace();
         }
@@ -70,7 +71,7 @@ public class BookDaoImpl implements BookDao {
     public void updateBook(Book book) {
         QueryRunner qr = new QueryRunner(C3P0Util.getDataSource());
         try {
-            qr.update("update books set name = ? ,price = ?,pnum = ?,category = ?,description = ? where id = ?", book.getName(), book.getPrice(), book.getPnum(), book.getCategory(), book.getDescription(), book.getId());
+            qr.update("update books set name = ? ,price = ?,pnum = ?,category = ?,description = ?,img_url = ? where id = ?", book.getName(), book.getPrice(), book.getPnum(), book.getCategory(), book.getDescription(),book.getImg_url(), book.getId());
         } catch (SQLException e) {
             e.printStackTrace();
         }
@@ -150,6 +151,17 @@ public class BookDaoImpl implements BookDao {
         QueryRunner qr = new QueryRunner(C3P0Util.getDataSource());
         try {
             return qr.query("select * from books limit ?,?", new BeanListHandler<Book>(Book.class), (currentPage - 1) * pageSize, pageSize);
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return null;
+    }
+
+    @Override
+    public List<Object> searchBookByName(String name) {
+        QueryRunner qr = new QueryRunner(C3P0Util.getDataSource());
+        try {
+            return qr.query("select name from books where name like ?", new ColumnListHandler(), "%" + name + "%");
         } catch (SQLException e) {
             e.printStackTrace();
         }

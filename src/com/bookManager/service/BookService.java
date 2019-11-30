@@ -71,4 +71,12 @@ public interface BookService {
      * @return
      */
     public PageBean findBooksPage(int currentPage, int pageSize);
+
+    /**
+     * ajax模糊查询
+     * @param name
+     * @return
+     */
+    public List<Object> searchBookByName(String name);
+
 }

@@ -10,6 +10,23 @@ public class Book {
     private int pnum;
     private String category;
     private String description;
+    private String img_url;
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof Book)) return false;
+
+        Book book = (Book) o;
+
+        return id.equals(book.id);
+
+    }
+
+    @Override
+    public int hashCode() {
+        return id.hashCode();
+    }
 
     public String getId() {
         return id;
@@ -57,5 +74,13 @@ public class Book {
 
     public void setDescription(String description) {
         this.description = description;
+    }
+
+    public String getImg_url() {
+        return img_url;
+    }
+
+    public void setImg_url(String img_url) {
+        this.img_url = img_url;
     }
 }
